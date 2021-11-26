@@ -12,11 +12,12 @@ extents = Vector2( 8, 8 )
 
 [node name="Level" type="Node2D"]
 
-[node name="Camera" type="Camera2D" parent="."]
-current = true
-
 [node name="Player" type="KinematicBody2D" parent="."]
 script = ExtResource( 2 )
+
+[node name="Camera" type="Camera2D" parent="Player"]
+current = true
+smoothing_enabled = true
 
 [node name="Sprite" type="Sprite" parent="Player"]
 texture = ExtResource( 1 )
